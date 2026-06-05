@@ -1,36 +1,198 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LUME
+
+### AI-Powered WhatsApp Business Automation Platform
+
+LUME helps businesses automate customer conversations, order management, bookings, support, and lead generation directly on WhatsApp using intelligent workflows and AI-driven automation.
+
+Built for restaurants, cafes, local businesses, and service providers looking to scale customer interactions without increasing operational overhead.
+
+---
+
+## Features
+
+### Authentication
+
+* Secure Google OAuth Login
+* User Management with Supabase Auth
+* Session Persistence
+
+### WhatsApp Automation
+
+* Automated Customer Conversations
+* Order & Booking Workflows
+* Smart Support Flows
+* Lead Capture Automation
+
+### Subscription Billing
+
+* Razorpay Payment Gateway Integration
+* Subscription Management
+* Plan Upgrades
+* Payment Tracking
+
+### Business Growth Tools
+
+* Lead Collection Forms
+* Customer Inquiry Management
+* Conversion-Focused Landing Pages
+* Analytics-Ready Architecture
+
+### Modern SaaS Experience
+
+* Responsive Design
+* Premium UI/UX
+* Smooth Scrolling Navigation
+* Interactive Pricing Section
+* Mobile-First Experience
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* Next.js 15
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+
+### Backend
+
+* Supabase
+* PostgreSQL
+
+### Authentication
+
+* Google OAuth
+* Supabase Auth
+
+### Payments
+
+* Razorpay
+
+### Deployment
+
+* Vercel
+
+---
+
+##  Project Structure
+
+```bash
+app/
+├── api/
+├── dashboard/
+├── page.tsx
+
+components/
+├── Navbar
+├── HeroSection
+├── PricingSection
+├── ContactSection
+├── Footer
+
+lib/
+├── auth.ts
+├── supabase.ts
+├── user.ts
+```
+
+---
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/lume.git
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+Create a `.env.local` file:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env
+NEXT_PUBLIC_SUPABASE_URL=
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
 
-## Deploy on Vercel
+NEXT_PUBLIC_RAZORPAY_KEY_ID=
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+RAZORPAY_KEY_SECRET=
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Deployment
+
+LUME is designed for deployment on Vercel.
+
+```bash
+npm run build
+```
+
+```bash
+vercel --prod
+```
+
+---
+
+## Current Status
+
+### MVP Completed
+
+* [x] Landing Page
+* [x] Google Authentication
+* [x] Supabase Integration
+* [x] Lead Capture System
+* [x] Razorpay Payments
+* [x] Pricing Plans
+* [x] Contact Management
+* [x] Responsive UI
+
+### Upcoming Features
+
+* [ ] WhatsApp Cloud API Integration
+* [ ] AI Agent Builder
+* [ ] Analytics Dashboard
+* [ ] Broadcast Messaging
+* [ ] Customer CRM
+* [ ] Team Management
+
+---
+
+## Vision
+
+LUME aims to become the operating system for WhatsApp-first businesses by enabling intelligent customer interactions, automated workflows, and scalable business growth through conversational AI.
+
+---
+
+## Author
+
+**Hitakshi**
+
+Building AI-powered products, automation systems, and scalable SaaS applications.
+
+---
+
+### Built using Next.js, Supabase, and Razorpay.
